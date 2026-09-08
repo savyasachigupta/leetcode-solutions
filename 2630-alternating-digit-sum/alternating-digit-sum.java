@@ -1,14 +1,14 @@
 class Solution {
     public int alternateDigitSum(int n) {
+        String s = String.valueOf(n);
         int sum = 0;
-        String s = "" + n;
-        int len = s.length();
-        for (int i = 0; i < len; i++) {
-            if (i % 2 == 0){
-                sum += s.charAt(i) - '0';
-            }
+        for (int i = 0; i < s.length(); i++) {
+            int digit = s.charAt(i) - '0';
+            if (i % 2 == 0) {
+                sum += digit;
+            } 
             else {
-                sum -= s.charAt(i) - '0';
+                sum -= digit;
             }
         }
         return sum;
