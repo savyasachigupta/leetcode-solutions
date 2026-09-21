@@ -1,19 +1,20 @@
 class Solution {
     public long[] resultArray(int[] nums, int k) {
-        int n = nums.length;
-        long[] result = new long[k];
-        long[] dp = new long[k];
-        for (int i = 0; i < n; i++) {
-            long[] ndp = new long[k];
-            ndp[nums[i] % k]++;
-            for (int r = 0; r < k; r++) {
-                ndp[(int)(((long)r * nums[i]) % k)] += dp[r];
+        long[] res = new long[k];
+        long[] cnt = new long[k];
+        for(int x: nums){
+            int mod = x%k;
+
+            long[] tmp = new long[k];
+            for(int i=0;i<k;i++){
+                int newMod = (i*mod)%k;
+                tmp[newMod] += cnt[i];
+                res[newMod] += cnt[i];
             }
-            dp = ndp;
-            for (int r = 0; r < k; r++) {
-                result[r] += dp[r];
-            }
+            res[mod]++;
+            tmp[mod]++;
+            cnt = tmp;
         }
-        return result;
+        return res;
     }
 }
