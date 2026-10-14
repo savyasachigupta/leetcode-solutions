@@ -1,6 +1,6 @@
 # 📝 2443. Sum of Number and Its Reverse (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/sum-of-number-and-its-reverse)
+🔗 [Problem Link](https://leetcode.com/problems/sum-of-number-and-its-reverse/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
