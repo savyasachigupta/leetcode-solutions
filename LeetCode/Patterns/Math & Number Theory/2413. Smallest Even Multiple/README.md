@@ -1,6 +1,6 @@
 # 📝 2413. Smallest Even Multiple (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/smallest-even-multiple/)
+🔗 [Problem Link](https://leetcode.com/problems/smallest-even-multiple)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
