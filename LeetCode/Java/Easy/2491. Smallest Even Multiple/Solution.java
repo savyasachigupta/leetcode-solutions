@@ -1,13 +1,8 @@
 class Solution {
     public int smallestEvenMultiple(int n) {
-        int i = 2, ans;
-        while (true) {
-            if (i % 2 == 0 && i % n == 0) {
-                ans = i;
-                break;
-            }
-            i++;
+        if (n % 2 == 0) {
+            return n;
         }
-        return ans;
+        return n * 2;
     }
 }
